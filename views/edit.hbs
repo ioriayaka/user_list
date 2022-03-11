@@ -1,0 +1,10 @@
+<form action="/customs/{{ custom.id }}?_method=PUT" method="POST" style="display: inline;">
+  <div class="input-group">
+    <input class="form-control" type="text" placeholder="name" name="name" value="{{ custom.name }}">
+    <input class="form-control" type="text" placeholder="address" name="address" value="{{ custom.address }}">
+    <input class="form-control" type="text" placeholder="password" name="password" value="{{ custom.password }}">
+    <div class="input-group-append">
+      <button class="btn btn-success" type="submit">Save</button>
+    </div>
+  </div>
+</form>

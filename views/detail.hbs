@@ -1,0 +1,11 @@
+<form action="/customs/{{ custom.id }}?_method=DELETE" method="POST" style="display: inline;">
+  <div class="input-group">
+    <input class="form-control" type="text" placeholder="name" name="name" value="name: {{ custom.name }}" disabled>
+    <input class="form-control" type="text" placeholder="address" name="address" value="address: {{ custom.address }}" disabled>
+    <input class="form-control" type="text" placeholder="password" name="password" value="password: {{ custom.password }}" disabled>
+    <div class="input-group-append">
+      <a class="btn btn-success" href="/customs/{{ custom.id }}/edit">edit</a>
+      <button class="btn btn-danger" type="submit">delete</button>
+    </div>
+  </div>
+</form>
